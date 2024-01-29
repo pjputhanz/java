@@ -1,0 +1,63 @@
+/*Program to search an element in an array of integers using sequential search*/
+
+#include<stdio.h>
+
+void main()
+
+{
+
+	int n,i,item,a[10];
+
+	clrscr();
+
+	printf("\nEnter the number of elements :");
+
+	scanf("%d",&n);
+
+	printf("\n Enter the elements \n",n);
+
+	for(i=0;i<n;i++)
+
+	{
+
+		scanf("%d",&a[i]);
+
+	}
+
+	printf("\nThe entered list is \n");
+
+	for(i=0;i<n;i++)
+
+	{
+
+		printf("%d\t",a[i]);
+
+	}
+
+        printf("\nEnter the item to search :");
+
+	scanf("%d",&item);
+
+	for(i=0;i<n;i++)
+
+	{
+
+		if(a[i]==item)
+
+		 {
+
+			    printf("%d is found at found %d position\n",item,(i+1));
+
+			    getch();
+
+			    exit(0);
+
+		 }
+
+	}
+
+	printf("\n%d is not found in the list\n",item);
+
+	getch();
+
+}
